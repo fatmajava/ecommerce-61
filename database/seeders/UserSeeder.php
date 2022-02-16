@@ -26,5 +26,10 @@ class UserSeeder extends Seeder
             'email' => 'amany@info.com',
             'password' => '123456789'
         ]);
+        DB::table('users')->insert([
+            'name' => 'Amany',
+            'email' => 'amany@info.com',
+            'password' => '123456789'
+        ]);
     }
 }
