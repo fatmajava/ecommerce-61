@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container">
-    <h1 class="text-center">show {{ $user->name }}Information</h1>
+<div class="container px-10">
+    <h1 class="text-center">{{ $user->name }}</h1>
     <form >
         
         <div class="mb-3">
@@ -17,7 +17,7 @@
           </div>
         
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <a href="{{ route('users.index') }}" class="btn btn-primary">Submit</a>
       </form>
 </div>
 @endsection

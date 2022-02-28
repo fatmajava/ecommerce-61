@@ -176,6 +176,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Darryldecode\Cart\CartServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        
 
     ],
 
@@ -191,6 +194,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+    'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
+    'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         // ...
     ])->toArray(),
 

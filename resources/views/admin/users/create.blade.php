@@ -28,13 +28,13 @@
           @enderror
         </div>
         <div class="mb-3">
-          {{-- <select class="form-select"  name="role_id">
+          <select class="form-select"  name="role_id">
               <option selected>select the role</option>
               @foreach ($roles as $role)
                   <option value="{{ $role->id }}">{{ $role->name }}</option>
               @endforeach
 
-          </select> --}}
+          </select>
       </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
